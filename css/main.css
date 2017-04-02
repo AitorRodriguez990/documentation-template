@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open sans', sans-serif;
+    color: #0e0e0e;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #0e0e0e;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    max-width: : 100%;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+footer {
+    height: 60px;
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+}
