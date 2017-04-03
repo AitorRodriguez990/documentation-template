@@ -1,4 +1,10 @@
 /* --------------------------------------------------------------------------
+  Datos de la plantilla
+  --------------------------------------------------------------------------- */
+
+/* Main color: #f44265 */
+
+/* --------------------------------------------------------------------------
   General
   --------------------------------------------------------------------------- */
 
@@ -20,7 +26,7 @@ a {
 }
 
 a:hover {
-    color: #0e0e0e;
+    color: #f44265;
 }
 
 .text-right {
@@ -100,9 +106,29 @@ h1 {
     margin-bottom: 20px;
 }
 
+.menu-title,
+.menu-element {
+	padding-left: 5px;
+	border-left: 2px solid transparent;
+}
+
 .menu-title {
+	margin-bottom: 3px;
     color: #999;
     font-weight: 600;
+}
+
+.menu-element {
+	line-height: 1.8em;
+	font-size: 13px;
+}
+
+.menu-element a {
+	display: block;
+}
+
+.menu-element:hover {
+	border-left-color: #f44265;
 }
 
 /* --------------------------------------------------------------------------
