@@ -1,18 +1,36 @@
+/* --------------------------------------------------------------------------
+  General
+  --------------------------------------------------------------------------- */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
+    margin-bottom: 60px;
     font-family: 'Open sans', sans-serif;
+    font-size: 14px;
     color: #0e0e0e;
 }
 
 a {
-    text-decoration: none;
     color: #666;
+    text-decoration: none;
 }
 
 a:hover {
     color: #0e0e0e;
 }
 
-header {
+.text-right {
+    text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+  Header
+  --------------------------------------------------------------------------- */
+.header {
     padding: 20px 0;
     border-bottom: 1px solid #dcdcdc;
 }
@@ -28,10 +46,14 @@ h1 {
     }
 }
 
+/* --------------------------------------------------------------------------
+  Content
+  --------------------------------------------------------------------------- */
+
 .container {
-    margin: 0 auto;
     width: 1024px;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,19 +62,60 @@ h1 {
     }
 }
 
-.content {
+.wrapper {
+    position: relative;
     padding: 50px 0;
 }
 
 @media only screen and (max-width: 768px) {
-    .content {
+    .wrapper {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
 
-footer {
+/* Navigation
+  --------------------------------------------------------------------------- */
+
+.menu {
+    position: fixed;
+    top: 148px;
+    width: 180px;
+    padding-right: 15px;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-title {
+    color: #999;
+    font-weight: 600;
+}
+
+/* Content
+--------------------------------------------------------------------------- */
+
+.content {
+    float: left;
+    padding-left: 195px;
+}
+
+/* --------------------------------------------------------------------------
+  Footer
+  --------------------------------------------------------------------------- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 60px;
+}
+
+.footer-container {
+    width: 1024px;
+    max-width: 100%;
     padding: 20px 0;
+    margin: 0 auto;
     border-top: 1px solid #dcdcdc;
 }
