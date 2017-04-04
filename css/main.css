@@ -75,8 +75,11 @@ p {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
-    .container { padding: 20px 10px; }
+@media only screen and (max-width: 1023px) {
+    .container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /* --------------------------------------------------------------------------
@@ -88,13 +91,6 @@ p {
     padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
 /* Navigation
   --------------------------------------------------------------------------- */
 
@@ -103,6 +99,10 @@ p {
     float: left;
     width: 15%;
 	padding-top: 55px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .sidebar { display: none; }
 }
 
 .sidebar-scrolled .menu {
@@ -142,6 +142,10 @@ p {
 	padding-right: 50px;
 }
 
+@media only screen and (max-width: 1023px) {
+    .content { width: 100%; }
+}
+
 .block-title {
 	margin-top: 50px;
 	margin-bottom: 10px;
@@ -178,4 +182,11 @@ p {
     padding: 20px 0;
     margin: 0 auto;
     border-top: 1px solid #dcdcdc;
+}
+
+@media only screen and (max-width: 1023px) {
+    .footer-container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
