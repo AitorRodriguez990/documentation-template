@@ -105,7 +105,10 @@ p {
 	padding-top: 55px;
 }
 
-.menu { position: fixed; }
+.sidebar-scrolled .menu {
+	position: fixed;
+	top: 15px;
+}
 
 .menu-section { margin-bottom: 20px; }
 
@@ -126,9 +129,9 @@ p {
 	font-size: 13px;
 }
 
-.menu-element a { display: block; }
-
 .menu-element:hover { border-left-color: #f44265; }
+
+.menu-element a { display: block; }
 
 /* Content
 --------------------------------------------------------------------------- */
