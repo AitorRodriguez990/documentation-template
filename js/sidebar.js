@@ -4,7 +4,7 @@
 $(function() {
     var $sidebar = $(".sidebar"),
         $window = $(window),
-        $start = $sidebar.offset().top + 40;
+        $start = $sidebar.offset().top + 30;
 
     $window.scroll(function() {
         if ($window.scrollTop() > $start) {
