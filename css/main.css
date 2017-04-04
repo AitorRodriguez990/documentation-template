@@ -37,19 +37,27 @@ a:hover {
   Header
   --------------------------------------------------------------------------- */
 .header {
-    padding: 20px 0;
+    padding: 20px 0 30px;
     border-bottom: 1px solid #dcdcdc;
 }
 
-h1 {
+.header-title {
     font-size: 3em;
     font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5em;
-    }
+    .header-title { font-size: 1.5em; }
+}
+
+.header-subtitle {
+	margin-top: 10px;
+    font-size: 1.8em;
+    color: #999;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-subtitle { font-size: 1.2em; }
 }
 
 /* --------------------------------------------------------------------------
@@ -63,9 +71,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        padding: 20px 10px;
-    }
+    .container { padding: 20px 10px; }
 }
 
 .wrapper {
@@ -97,14 +103,9 @@ h1 {
     width: 15%;
 }
 
-.menu {
-    position: fixed;
-    top: 148px;
-}
+.menu { position: fixed; }
 
-.menu-section {
-    margin-bottom: 20px;
-}
+.menu-section { margin-bottom: 20px; }
 
 .menu-title,
 .menu-element {
@@ -123,13 +124,9 @@ h1 {
 	font-size: 13px;
 }
 
-.menu-element a {
-	display: block;
-}
+.menu-element a { display: block; }
 
-.menu-element:hover {
-	border-left-color: #f44265;
-}
+.menu-element:hover { border-left-color: #f44265; }
 
 /* --------------------------------------------------------------------------
   Footer
