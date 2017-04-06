@@ -10,6 +10,7 @@ $(document).ready(function() {
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.defaults['gutter'] = true;
     SyntaxHighlighter.all();
+    SyntaxHighlighter.highlight();
 
 });
 
