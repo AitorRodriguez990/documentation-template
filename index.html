@@ -2,13 +2,23 @@
 <html lang="es">
 
 <head>
-	<title>Documentation template</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<title>Documentation template</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="js/syntaxhighlighter/styles/shCore.css">
+	<link rel="stylesheet" type="text/css" href="js/syntaxhighlighter/styles/shThemeDefault.css">
+
+	<!-- Custom CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -27,7 +37,13 @@
 
 				<p>Integer dignissim elit vel dui imperdiet euismod. Donec sagittis ante vel nunc sagittis iaculis. Aenean eros ante, placerat nec mi ut, dictum consequat purus. Mauris lacus leo, tempus quis facilisis eu, dictum non est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In nec sem nisl. Vivamus bibendum nibh turpis, ut luctus justo malesuada vel. Nunc consectetur suscipit sodales.</p>
 
-				<p>Mauris finibus at libero quis tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu lacus, porttitor a neque eget, tempor eleifend eros. Donec quis nibh metus. Donec faucibus at quam fermentum faucibus. Etiam sed mi auctor, posuere mauris a, egestas metus. Integer feugiat, metus ut tincidunt molestie, sem justo pellentesque eros, sit amet bibendum nibh lorem nec ante.</p>
+				<pre class="brush: css;">
+                    .class-name {
+						position: relative;
+						padding: 20px 10px;
+						border: 1px solid red;
+						font-size: 11px;
+					}</pre>
 			</div>
 
 			<div class="block">
@@ -96,7 +112,13 @@
 	</footer>
 
 	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/main.js"></script>
 	<script src="js/sidebar.js"></script>
+
+	<!-- Syntax Highlighter (http://alexgorbatchev.com/SyntaxHighlighter/) - Custom with languages you need. Don't remove Core -->
+	<script src="js/syntaxhighlighter/scripts/shCore.js"></script>
+	<script src="js/syntaxhighlighter/scripts/shBrushCss.js"></script>
+	<script src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
 </body>
 
 </html>
