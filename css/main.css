@@ -14,7 +14,6 @@ html {
 }
 
 body {
-	position: relative;
     margin-bottom: 60px;
     font-family: 'Open sans', sans-serif;
     font-size: 14px;
@@ -190,6 +189,8 @@ p {
     margin: 0 auto;
     border-top: 1px solid #dcdcdc;
 }
+
+.footer-container p { margin-bottom: 0; }
 
 @media only screen and (max-width: 1023px) {
     .footer-container {
