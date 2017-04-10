@@ -115,7 +115,7 @@ p {
 .sidebar-menu-section { margin-bottom: 20px; }
 
 .sidebar-menu-title,
-.sidebar-menu-element {
+.sidebar-menu-element a {
 	padding-left: 5px;
 	border-left: 2px solid transparent;
 }
@@ -126,20 +126,19 @@ p {
     font-weight: 600;
 }
 
-.sidebar-menu-element {
+.sidebar-menu-element a {
+	display: block;
 	line-height: 1.8em;
 	font-size: 13px;
 }
 
-.sidebar-menu-element.is-active,
-.sidebar-menu-element:hover { border-left-color: #f44265; }
-
-.sidebar-menu-element.is-active a {
-	font-weight: bold;
+.sidebar-menu-element a.is-active,
+.sidebar-menu-element a:hover {
+	border-left-color: #f44265;
 	color: #f44265;
 }
 
-.sidebar-menu-element a { display: block; }
+.sidebar-menu-element a.is-active { font-weight: bold; }
 
 /* Content
 --------------------------------------------------------------------------- */
