@@ -31,3 +31,12 @@ $(function() {
         }
     });
 });
+
+/* --------------------------------------------------------------------------
+  Add class on click sidebar element
+  --------------------------------------------------------------------------- */
+
+$('.sidebar-menu-element').click(function() {
+    $('.sidebar-menu-element').removeClass('is-active');
+    $(this).addClass('is-active');
+});
