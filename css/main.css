@@ -188,9 +188,11 @@ p {
     padding: 20px 0;
     margin: 0 auto;
     border-top: 1px solid #dcdcdc;
+	text-align: center;
 }
 
-.footer-container p { margin-bottom: 0; }
+.footer-container p:first-child { margin-bottom: 5px; }
+.footer-container p:not(:first-child) { margin-bottom: 0; }
 
 @media only screen and (max-width: 1023px) {
     .footer-container {
