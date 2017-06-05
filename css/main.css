@@ -2,7 +2,10 @@
   Datos de la plantilla
   --------------------------------------------------------------------------- */
 
-/* Main color: #64dbc1 */
+/*
+	Main color: #64dbc1
+	Footer height: 140px
+*/
 
 /* --------------------------------------------------------------------------
   General
@@ -92,7 +95,7 @@ p {
 
 .wrapper {
 	position: relative;
-	padding-bottom: 50px;
+	padding-bottom: 140px;
 }
 
 
@@ -183,21 +186,18 @@ p {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 60px;
+	height: 140px;
+	background-color: #000;
+	color: #9b9b9b;
+	font-size: 14px;
 }
 
 .footer-container {
 	width: 1024px;
 	max-width: 100%;
-	padding: 20px 0;
+	padding: 95px 0 25px;
 	margin: 0 auto;
-	border-top: 1px solid #dcdcdc;
-	text-align: center;
 }
-
-.footer-container p:first-child { margin-bottom: 5px; }
-
-.footer-container p:not(:first-child) { margin-bottom: 0; }
 
 @media only screen and (max-width: 1023px) {
 	.footer-container {
@@ -206,6 +206,15 @@ p {
 	}
 }
 
+.footer-container p { margin: 0; }
+
+.footer-heart { color: #64dbc1; }
+
+.footer-author {
+	display: inline;
+	margin-left: 20px;
+	font-size: 12px;
+}
 
 /* --------------------------------------------------------------------------
   Syntax Highlighter
