@@ -15,7 +15,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    font-family: 'Open sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #0e0e0e;
 }
@@ -42,12 +42,14 @@ p {
   Header
   --------------------------------------------------------------------------- */
 .header {
-    padding: 20px 0 30px;
-    border-bottom: 1px solid #dcdcdc;
+    padding: 100px 0;
+		background-color: #f9f9f9;
 }
 
+.header .container { width: 720px; }
+
 .header-title {
-    font-size: 3em;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -56,10 +58,11 @@ p {
 }
 
 .header-subtitle {
-	margin-top: 10px;
-	margin-bottom: 0;
-    font-size: 1.8em;
-    color: #999;
+		margin-top: 10px;
+		margin-bottom: 0;
+		line-height: 42px;
+  	font-size: 34px;
+		font-weight: 100;
 }
 
 @media only screen and (max-width: 768px) {
