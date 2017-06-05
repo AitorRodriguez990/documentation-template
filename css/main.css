@@ -129,27 +129,33 @@ p {
 	margin-bottom: 20px;
 }
 
-.sidebar-menu-title, .sidebar-menu-element a {
+.sidebar-menu-title {
 	padding-left: 5px;
-	border-left: 2px solid transparent;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #d9d9d9;
 }
 
-.sidebar-menu-title {
+.sidebar-menu-subtitle,
+.sidebar-menu-element a {
+	padding: 3px 5px;
+}
+
+.sidebar-menu-subtitle {
 	margin-bottom: 3px;
-	color: #999;
-	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .sidebar-menu-element a {
-	display: block;
-	line-height: 1.8em;
+	line-height: 25px;
 	font-size: 13px;
 }
 
 .sidebar-menu-element a.is-active,
 .sidebar-menu-element a:hover {
-	border-left-color: #64dbc1;
-	color: #64dbc1;
+	background: #64dbc1;
+	color: #fff;
 }
 
 .sidebar-menu-element a.is-active { font-weight: bold; }
