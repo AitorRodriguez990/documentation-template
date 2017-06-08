@@ -21,7 +21,7 @@ $(document).ready(function() {
 $(function() {
     var $sidebar = $(".sidebar"),
         $window = $(window),
-        $start = $sidebar.offset().top + 30;
+        $start = $sidebar.offset().top - 98;
 
     $window.scroll(function() {
         if ($window.scrollTop() > $start) {
