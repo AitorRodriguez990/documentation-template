@@ -106,7 +106,7 @@ p {
 }
 
 
-/* Navigation
+/* Sidebar
   --------------------------------------------------------------------------- */
 
 .sidebar {
@@ -157,8 +157,6 @@ p {
 	background: #64dbc1;
 	color: #fff;
 }
-
-.sidebar-menu-element a.is-active { font-weight: bold; }
 
 
 /* Content
