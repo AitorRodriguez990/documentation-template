@@ -4,13 +4,13 @@
 
 $(document).ready(function() {
 
-    /* Syntax Highlighter
-    --------------------------------------------------------------------------- */
+	/* Syntax Highlighter
+	--------------------------------------------------------------------------- */
 
-    SyntaxHighlighter.defaults['toolbar'] = false;
-    SyntaxHighlighter.defaults['gutter'] = false;
-    SyntaxHighlighter.all();
-    SyntaxHighlighter.highlight();
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+	SyntaxHighlighter.highlight();
 
 });
 
@@ -19,17 +19,17 @@ $(document).ready(function() {
   --------------------------------------------------------------------------- */
 
 $(function() {
-    var $sidebar = $(".sidebar"),
-        $window = $(window),
-        $start = $sidebar.offset().top - 98;
+	var $sidebar = $(".sidebar"),
+		$window = $(window),
+		$start = $sidebar.offset().top - 98;
 
-    $window.scroll(function() {
-        if ($window.scrollTop() > $start) {
-            $sidebar.addClass("sidebar-scrolled");
-        } else {
-            $sidebar.removeClass("sidebar-scrolled");
-        }
-    });
+	$window.scroll(function() {
+		if ($window.scrollTop() > $start) {
+			$sidebar.addClass("sidebar-scrolled");
+		} else {
+			$sidebar.removeClass("sidebar-scrolled");
+		}
+	});
 });
 
 /* --------------------------------------------------------------------------
@@ -38,20 +38,21 @@ $(function() {
 /* https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
 
 $(function() {
-    $('.sidebar-menu-element a').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	$('.sidebar-menu-element a').click(function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-            if (target.length) {
-                $('.sidebar-menu-element a').removeClass('is-active');
-                $(this).addClass('is-active');
+			if (target.length) {
+        // Add class on click sidebar element
+				/*$('.sidebar-menu-element a').removeClass('is-active');
+				$(this).addClass('is-active');*/
 
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 700);
-                return false;
-            }
-        }
-    });
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 700);
+				return false;
+			}
+		}
+	});
 });
