@@ -4,6 +4,7 @@
 
 /*
 	Main color: #64dbc1
+	Gray background color: #fdfdfd
 	Footer height: 165px
 */
 
@@ -53,7 +54,7 @@ p {
 	position: relative;
 	z-index: 20;
 	padding: 170px 0 100px;
-	background-color: #f9f9f9;
+	background-color: #fdfdfd;
 }
 
 .header .container { width: 720px; }
@@ -81,7 +82,7 @@ p {
 	width: 100%;
 	height: 104px;
 	padding: 40px 0;
-	background-color: #f9f9f9;
+	background-color: #fdfdfd;
 }
 
 .subheader-title {
@@ -217,6 +218,18 @@ p {
 
 .block-lead { font-size: 1.2em; }
 
+/* Code block */
+.code {
+	margin-top: 30px;
+	padding: 10px 25px;
+	background-color: #fdfdfd;
+}
+
+.code .syntaxhighlighter,
+.code .syntaxhighlighter .line {
+	background-color: #fdfdfd !important;
+}
+
 
 /* --------------------------------------------------------------------------
   Footer
@@ -277,5 +290,3 @@ p {
 .syntaxhighlighter table thead,
 .syntaxhighlighter table caption,
 .syntaxhighlighter textarea { line-height: 1.3em !important; }
-
-.syntaxhighlighter { margin-top: 30px !important; }
