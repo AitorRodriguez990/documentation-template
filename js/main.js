@@ -8,7 +8,7 @@ $(document).ready(function() {
     --------------------------------------------------------------------------- */
 
     SyntaxHighlighter.defaults['toolbar'] = false;
-    SyntaxHighlighter.defaults['gutter'] = true;
+    SyntaxHighlighter.defaults['gutter'] = false;
     SyntaxHighlighter.all();
     SyntaxHighlighter.highlight();
 
