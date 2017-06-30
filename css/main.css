@@ -205,14 +205,14 @@ p {
 	margin-top: 50px;
 	margin-bottom: 10px;
 	font-size: 2em;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .block-subtitle {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 1.6em;
-	font-weight: 600;
+	font-weight: 500;
 	color: #64dbc1;
 }
 
