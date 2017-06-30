@@ -237,6 +237,7 @@ a:hover { color: #64dbc1; }
 --------------------------------------------------------------------------- */
 
 .note {
+	margin-top: 10px;
 	padding: 20px;
 	background-color: #fdfdfd;
 }
