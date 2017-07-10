@@ -266,6 +266,22 @@ a:hover { color: #64dbc1; }
 .note-important:before { background-color: #e55454; }
 
 
+/* Note
+--------------------------------------------------------------------------- */
+
+.example {
+	padding: 25px;
+	border: 1px solid #fafafa;
+}
+
+.example-title {
+	margin-bottom: 20px;
+	color: #d9d9d9;
+}
+
+.example + .code { margin-top: 0; }
+
+
 /* --------------------------------------------------------------------------
   Footer
   --------------------------------------------------------------------------- */
