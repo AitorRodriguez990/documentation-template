@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 });
 
+
 /* --------------------------------------------------------------------------
   Follow sidebar
   --------------------------------------------------------------------------- */
@@ -32,6 +33,7 @@ $(function() {
 	});
 });
 
+
 /* --------------------------------------------------------------------------
   Smooth scrolling and add style on click section
   --------------------------------------------------------------------------- */
@@ -44,12 +46,8 @@ $(function() {
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
 			if (target.length) {
-        // Add class on click sidebar element
-				/*$('.sidebar-menu-element a').removeClass('is-active');
-				$(this).addClass('is-active');*/
-
 				$('html,body').animate({
-					scrollTop: target.offset().top
+					scrollTop: target.offset().top - 120
 				}, 700);
 				return false;
 			}
